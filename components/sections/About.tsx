@@ -4,6 +4,7 @@ import { useEffect, useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Image from "next/image";
+import { Highlighter } from "@/components/ui/highlighter";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -50,7 +51,9 @@ export default function About() {
           {/* Text */}
           <div className="space-y-6 text-base leading-relaxed opacity-80 sm:text-base">
             <h2 className="about-item text-3xl font-semibold sm:text-4xl text-white">
-              About Nordvia
+              <Highlighter action="circle" color="#FF9800" padding={15}>
+                About Nordvia
+              </Highlighter>
             </h2>
 
             <p className="about-item">

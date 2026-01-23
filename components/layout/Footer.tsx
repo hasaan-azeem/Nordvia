@@ -57,7 +57,6 @@ export default function Footer() {
   return (
     <footer className="bg-black border-t border-white/10 py-12 text-white">
       <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-14 text-center md:text-left">
-
         {/* Brand Info */}
         <div className="flex flex-col items-center md:items-start">
           <Image src="/logo_.png" alt="Nordvia Logo" width={180} height={40} />
@@ -72,12 +71,36 @@ export default function Footer() {
         <div className="flex flex-col items-center md:items-start">
           <h3 className="text-lg font-semibold mb-4">Shop Links</h3>
           <ul className="space-y-1 text-base opacity-80">
-            <li><a href="#" className="hover:underline">Home</a></li>
-            <li><a href="#casual" className="hover:underline">Hoodies</a></li>
-            <li><a href="#sports" className="hover:underline">Tracksuits</a></li>
-            <li><a href="#sports" className="hover:underline">Jackets</a></li>
-            <li><a href="#sports" className="hover:underline">Outwear</a></li>
-            <li><a href="#contact" className="hover:underline">Contact</a></li>
+            <li>
+              <a href="#" className="hover:underline">
+                Home
+              </a>
+            </li>
+            <li>
+              <a href="#casual" className="hover:underline">
+                Hoodies
+              </a>
+            </li>
+            <li>
+              <a href="#sports" className="hover:underline">
+                Tracksuits
+              </a>
+            </li>
+            <li>
+              <a href="#sports" className="hover:underline">
+                Jackets
+              </a>
+            </li>
+            <li>
+              <a href="#sports" className="hover:underline">
+                Outwear
+              </a>
+            </li>
+            <li>
+              <a href="#contact" className="hover:underline">
+                Contact
+              </a>
+            </li>
           </ul>
         </div>
 
@@ -85,8 +108,10 @@ export default function Footer() {
         <div className="flex flex-col items-center md:items-start">
           <h3 className="text-lg font-semibold mb-4">Legals</h3>
           <ul className="space-y-1 text-base opacity-80">
-            <li className="hover:text-teal-500 cursor-pointer">Shipping Info</li>
-            <li className="hover:text-teal-500 cursor-pointer">Terms & Conditions</li>
+            <li className="hover:opacity-80 cursor-pointer">Shipping Info</li>
+            <li className="hover:opacity-80 cursor-pointer">
+              Terms & Conditions
+            </li>
           </ul>
         </div>
 
@@ -95,13 +120,25 @@ export default function Footer() {
           <h3 className="font-semibold mb-4 text-lg">Contact Us</h3>
 
           <div className="flex gap-4 mb-4">
-            <a href="https://instagram.com" target="_blank" className="hover:opacity-80">
+            <a
+              href="https://instagram.com"
+              target="_blank"
+              className="cursor-pointer hover:opacity-80"
+            >
               <FaInstagram size={22} />
             </a>
-            <a href="https://facebook.com" target="_blank" className="hover:opacity-80">
+            <a
+              href="https://facebook.com"
+              target="_blank"
+              className="cursor-pointer hover:opacity-80"
+            >
               <FaFacebookF size={22} />
             </a>
-            <a href="https://wa.me/03146802816" target="_blank" className="hover:opacity-80">
+            <a
+              href="https://wa.me/03146802816"
+              target="_blank"
+              className="cursor-pointer hover:opacity-80"
+            >
               <FaWhatsapp size={22} />
             </a>
           </div>
@@ -111,7 +148,7 @@ export default function Footer() {
               Email:{" "}
               <a
                 href="mailto:nordvia.exports@gmail.com"
-                className="hover:opacity-80"
+                className="cursor-pointer hover:opacity-80"
               >
                 nordvia.exports@gmail.com
               </a>
@@ -121,7 +158,7 @@ export default function Footer() {
               Call Us:{" "}
               <a
                 href="tel:+923001234567"
-                className="hover:opacity-80 font-medium"
+                className="cursor-pointer hover:opacity-80 font-medium"
               >
                 +92 300 1234567
               </a>
