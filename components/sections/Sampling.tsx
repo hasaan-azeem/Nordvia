@@ -60,7 +60,7 @@ export default function Sampling() {
       {/* Background */}
       <div
         className="absolute inset-0 bg-cover bg-center opacity-15"
-        style={{ backgroundImage: "url('/Sampling.webp')" }}
+        style={{ backgroundImage: "url('/sampling.webp')" }}
       />
 
       <div className="relative mx-auto max-w-6xl px-6">
@@ -69,7 +69,8 @@ export default function Sampling() {
           Sampling Process
         </h2>
         <p className="sample-item mb-10 max-w-3xl text-lg opacity-80">
-          We provide paid samples so brands can verify quality before bulk production.
+          We provide paid samples so brands can verify quality before bulk
+          production.
         </p>
 
         <div className="grid gap-6 sm:grid-cols-3">
@@ -93,7 +94,8 @@ export default function Sampling() {
           Production and Export
         </h2>
         <p className="sample-item mb-10 max-w-3xl text-base opacity-80">
-          We manage production, guiding our partners through every step, from order confirmation to final delivery.
+          We manage production, guiding our partners through every step, from
+          order confirmation to final delivery.
         </p>
 
         <div className="grid gap-6 sm:grid-cols-2">
