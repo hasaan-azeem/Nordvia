@@ -11,7 +11,7 @@ export default function Hero() {
     if (!containerRef.current || !bgRef.current) return;
 
     const img = new Image();
-    img.src = "/herobg.jpg";
+    img.src = "/herobg.webp";
 
     img.onload = () => {
       gsap.to(bgRef.current, {
