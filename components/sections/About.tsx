@@ -37,7 +37,7 @@ export default function About() {
           {/* Image */}
           <div className="about-item relative w-full h-105 rounded-2xl overflow-hidden border border-white/10">
             <Image
-              src="/About.png"
+              src="/About.webp"
               alt="Nordvia Manufacturing"
               fill
               className="object-cover"

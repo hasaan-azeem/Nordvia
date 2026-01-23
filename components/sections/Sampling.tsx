@@ -60,7 +60,7 @@ export default function Sampling() {
       {/* Background */}
       <div
         className="absolute inset-0 bg-cover bg-center opacity-15"
-        style={{ backgroundImage: "url('/Sampling.jpg')" }}
+        style={{ backgroundImage: "url('/Sampling.webp')" }}
       />
 
       <div className="relative mx-auto max-w-6xl px-6">

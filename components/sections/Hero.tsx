@@ -40,7 +40,7 @@ export default function Hero() {
       <div
         ref={bgRef}
         className="absolute inset-0 bg-cover bg-center opacity-0 will-change-opacity"
-        style={{ backgroundImage: "url('/herobg.jpg')" }}
+        style={{ backgroundImage: "url('/herobg.webp')" }}
       />
 
       {/* Dark overlay */}

@@ -9,24 +9,24 @@ gsap.registerPlugin(ScrollTrigger);
 const products = [
   {
     title: "Premium Fleece Hoodies",
-    image: "/products/hoodies.png",
+    image: "/products/hoodies.webp",
     details:
       "Soft cotton fleece, breathable and warm, available in multiple colors.",
   },
   {
     title: "Winter Tracksuits",
-    image: "/products/tracksuits.png",
+    image: "/products/tracksuits.webp",
     details: "Full tracksuits for comfort and style, ideal for winter sports.",
   },
   {
     title: "Bomber & Casual Jackets",
-    image: "/products/jackets.png",
+    image: "/products/jackets.webp",
     details:
       "Classic bomber and casual jackets, tailored for durability and style.",
   },
   {
     title: "Coats & Cold Weather Outerwear",
-    image: "/products/coats.png",
+    image: "/products/coats.webp",
     details: "Heavy-duty coats designed for extreme cold, export quality.",
   },
 ];
