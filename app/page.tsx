@@ -1,6 +1,7 @@
 import About from "@/components/sections/About";
+import Categories from "@/components/sections/Categories";
 import CTA from "@/components/sections/CTA";
-// import Export from "@/components/sections/Export";
+import Export from "@/components/sections/Export";
 import Hero from "@/components/sections/Hero";
 import Products from "@/components/sections/Products";
 import Sampling from "@/components/sections/Sampling";
@@ -14,9 +15,10 @@ export default function Home() {
       <Products />
       <About />
       <WhyUs />
+      <Categories />
       <ShippingPartners />
       <Sampling />
-      {/* <Export /> */}
+      <Export />
       <CTA />
     </>
   );

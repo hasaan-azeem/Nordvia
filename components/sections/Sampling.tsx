@@ -64,6 +64,7 @@ export default function Sampling() {
       />
 
       <div className="relative mx-auto max-w-6xl px-6">
+        
         {/* Sampling Process */}
         <h2 className="sample-item mb-6 text-3xl font-semibold sm:text-4xl">
           Sampling Process
@@ -79,35 +80,11 @@ export default function Sampling() {
             return (
               <div
                 key={item.title}
-                className="sample-item rounded-2xl border border-white/10 bg-black/40 p-6 backdrop-blur hover:scale-105 transition-transform"
+                className="sample-item rounded-2xl border border-white/10 bg-black/0 p-6 backdrop-blur"
               >
                 <Icon className="mb-4 h-8 w-8 text-white" />
                 <h3 className="mb-2 text-lg font-medium">{item.title}</h3>
                 <p className="text-sm opacity-70">{item.desc}</p>
-              </div>
-            );
-          })}
-        </div>
-
-        {/* Production & Export */}
-        <h2 className="sample-item mt-16 mb-6 text-3xl font-semibold sm:text-4xl">
-          Production and Export
-        </h2>
-        <p className="sample-item mb-10 max-w-3xl text-base opacity-80">
-          We manage production, guiding our partners through every step, from
-          order confirmation to final delivery.
-        </p>
-
-        <div className="grid gap-6 sm:grid-cols-2">
-          {steps.map((step) => {
-            const Icon = step.icon;
-            return (
-              <div
-                key={step.title}
-                className="sample-item flex items-start gap-4 rounded-2xl border border-white/10 bg-black/40 p-6 backdrop-blur hover:scale-105 transition-transform"
-              >
-                <Icon className="mt-1 h-6 w-6 text-white" />
-                <p className="text-sm opacity-80 sm:text-base">{step.title}</p>
               </div>
             );
           })}

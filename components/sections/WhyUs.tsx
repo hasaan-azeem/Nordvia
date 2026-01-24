@@ -22,12 +22,7 @@ const reasons = [
     desc: "Direct communication and support throughout production.",
     icon: FaHeadset,
   },
-  {
-    title: "Fast Delivery",
-    desc: "Optimized production timelines with reliable shipping.",
-    icon: FaShippingFast,
-  },
-  {
+   {
     title: "Customization Options",
     desc: "Styles, colors, fabrics, and fits made to your needs.",
     icon: FaPalette,
@@ -36,21 +31,6 @@ const reasons = [
     title: "Low MOQ",
     desc: "Perfect for startups and test orders.",
     icon: FaBoxes,
-  },
-  {
-    title: "Winter-Focused Fabrics",
-    desc: "Premium fleece, wool, and cold-weather materials.",
-    icon: FaSnowflake,
-  },
-  {
-    title: "Custom Branding",
-    desc: "Labels, tags, packaging, and private branding.",
-    icon: FaTags,
-  },
-  {
-    title: "Transparent Communication",
-    desc: "Clear updates at every production stage.",
-    icon: FaComments,
   },
   {
     title: "Global Export Experience",
@@ -89,7 +69,7 @@ export default function WhyUs() {
       style={{ backgroundImage: "url('/Why.webp')" }}
     >
       {/* Dark overlay */}
-      <div className="absolute inset-0 bg-black/85" />
+      <div className="absolute inset-0 bg-black/90" />
 
       <div className="relative mx-auto max-w-6xl px-6 text-white">
         {/* Heading */}
@@ -99,7 +79,8 @@ export default function WhyUs() {
           </h2>
           <p className="mt-2 text-lg opacity-80 ">
             A manufacturing partner focused on quality, transparency, and
-            long-term growth.
+            long-term growth.  We believe strong partnerships are built on honesty, consistency, and
+          delivering exactly what we promise.
           </p>
         </div>
 
@@ -110,13 +91,13 @@ export default function WhyUs() {
             return (
               <div
                 key={item.title}
-                className="why-item rounded-2xl border border-white/5 bg-white/2 p-6 backdrop-blur-sm"
+                className="why-item rounded-2xl border border-white/5 bg-white/1 p-6 backdrop-blur-sm"
               >
                 <Icon className="mb-4 text-2xl text-white/90" />
-                <h3 className="mb-1 text-base font-semibold">
+                <h3 className="mb-1 text-lg font-semibold">
                   {item.title}
                 </h3>
-                <p className="text-sm opacity-75">
+                <p className="text-base opacity-75">
                   {item.desc}
                 </p>
               </div>
@@ -124,11 +105,6 @@ export default function WhyUs() {
           })}
         </div>
 
-        {/* Closing line */}
-        <p className="why-item mt-12 text-center text-lg opacity-70 ">
-          We believe strong partnerships are built on honesty, consistency, and
-          delivering exactly what we promise.
-        </p>
       </div>
     </section>
   );

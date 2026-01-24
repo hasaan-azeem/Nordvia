@@ -3,13 +3,14 @@
 import Link from "next/link";
 import { useState, useRef, useEffect } from "react";
 import { FaInstagram, FaFacebookF, FaBars, FaTimes } from "react-icons/fa";
+import { FaEnvelope } from "react-icons/fa6";
 import gsap from "gsap";
 
 const products = [
-  { name: "Hoodies", href: "#products" },
-  { name: "Tracksuits", href: "#products" },
-  { name: "Jackets", href: "#products" },
-  { name: "Outerwear", href: "#products" },
+  { name: "Hoodies", href: "#catalog" },
+  // { name: "Tracksuits", href: "#products" },
+  { name: "Jackets", href: "#catalog" },
+  { name: "Outerwear", href: "#catalog" },
 ];
 
 export default function Navbar() {
@@ -58,7 +59,7 @@ export default function Navbar() {
         {/* Desktop Menu */}
         <div className="hidden md:flex items-center gap-8">
           <Link
-            href="/"
+            href="#home"
             className="relative text-base opacity-80 hover:opacity-100 group"
           >
             Home
@@ -83,6 +84,13 @@ export default function Navbar() {
             </div>
           </div>
 
+          <Link
+            href="#products"
+            className="relative text-base opacity-80 hover:opacity-100 group"
+          >
+            Manufactured
+            <span className="absolute left-0 -bottom-1 h-0.5 w-0 bg-current transition-all duration-300 group-hover:w-full" />
+          </Link>
           <Link
             href="#about"
             className="relative text-base opacity-80 hover:opacity-100 group"
@@ -113,6 +121,13 @@ export default function Navbar() {
               className="hover:opacity-80"
             >
               <FaFacebookF size={22} />
+            </a>
+            <a
+              href="mailto:nordvia.exports@gmail.com"
+              className="cursor-pointer hover:opacity-80"
+              target="_blank"
+            >
+              <FaEnvelope size={22} />
             </a>
           </div>
         </div>
@@ -162,6 +177,13 @@ export default function Navbar() {
             ))}
 
           <Link
+            href="#products"
+            onClick={() => setOpen(false)}
+            className="text-sm opacity-80"
+          >
+            Manufactured
+          </Link>
+          <Link
             href="#about"
             onClick={() => setOpen(false)}
             className="text-sm opacity-80"
@@ -183,6 +205,13 @@ export default function Navbar() {
               className="hover:opacity-80"
             >
               <FaFacebookF size={18} />
+            </a>
+            <a
+              href="mailto:nordvia.exports@gmail.com"
+              className="cursor-pointer hover:opacity-80"
+              target="_blank"
+            >
+              <FaEnvelope size={18} />
             </a>
           </div>
 

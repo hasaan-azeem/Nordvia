@@ -52,7 +52,7 @@ export default function ShippingPartners() {
             </p>
 
             {/* Why Choose Box */}
-            <div className="shipping-item mt-10 max-w-xl rounded-2xl border border-white/10 p-6 text-white shadow-lg">
+            <div className="shipping-item mt-10 max-w-xl rounded-2xl border border-white/50 p-6 text-white shadow-lg">
               <h3 className="text-2xl font-bold mb-6">
                 Why Choose Our Delivery?
               </h3>

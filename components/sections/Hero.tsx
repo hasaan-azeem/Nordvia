@@ -33,6 +33,7 @@ export default function Hero() {
 
   return (
     <section
+      id="home"
       ref={containerRef}
       className="relative flex min-h-screen items-center justify-center overflow-hidden"
     >
@@ -60,9 +61,12 @@ export default function Hero() {
         </p>
 
         <div className="hero-item mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
-          <button className="rounded-full bg-white px-8 py-3 text-base font-medium text-black hover:opacity-90 transition">
-            Request Catalog
-          </button>
+          <a
+            href="#catalog"
+            className="rounded-full bg-white px-8 py-3 text-base font-medium text-black hover:opacity-90 transition"
+          >
+            Check Catalog
+          </a>
 
           <a
             href="https://wa.me/03146802816"

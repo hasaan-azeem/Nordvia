@@ -3,6 +3,7 @@ import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import SmoothScrolling from "@/components/Common/SmoothScrolling";
 import { ScrollProgress } from "@/components/ui/scroll-progress";
+import WhatsAppButton from "@/components/Common/WhatsAppButton";
 
 export const metadata = {
   title: "Nordvia | Winter Apparel Manufacturer",
@@ -20,9 +21,10 @@ export default function RootLayout({
       <body className="bg-black text-white antialiased flex flex-col min-h-screen">
         <SmoothScrolling>
           <Navbar />
-           <ScrollProgress className="top-18" />
+          <ScrollProgress className="sm:top-18.25 top-15.25" />
 
           <main className="pt-14 flex-1">{children}</main>
+          <WhatsAppButton />
           <Footer />
         </SmoothScrolling>
       </body>

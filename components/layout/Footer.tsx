@@ -108,10 +108,7 @@ export default function Footer() {
         <div className="flex flex-col items-center md:items-start">
           <h3 className="text-lg font-semibold mb-4">Legals</h3>
           <ul className="space-y-1 text-base opacity-80">
-            <li className="hover:opacity-80 cursor-pointer">Shipping Info</li>
-            <li className="hover:opacity-80 cursor-pointer">
-              Terms & Conditions
-            </li>
+            <li className="hover:opacity-80 cursor-pointer"> <a href="#shipping"> Shipping Info</a></li>
           </ul>
         </div>
 
