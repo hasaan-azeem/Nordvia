@@ -7,10 +7,12 @@ import Products from "@/components/sections/Products";
 import Sampling from "@/components/sections/Sampling";
 import ShippingPartners from "@/components/sections/ShippingPartners";
 import WhyUs from "@/components/sections/WhyUs";
+import { Analytics } from "@vercel/analytics/next";
 
 export default function Home() {
   return (
     <>
+      <Analytics />
       <Hero />
       <Products />
       <About />
