@@ -116,7 +116,7 @@ export default function Navbar() {
               <FaInstagram size={22} />
             </a>
             <a
-              href="https://facebook.com"
+              href="https://facebook.com/nordviaexports"
               target="_blank"
               className="hover:opacity-80"
             >
@@ -200,7 +200,7 @@ export default function Navbar() {
               <FaInstagram size={18} />
             </a>
             <a
-              href="https://facebook.com"
+              href="https://facebook.com/nordviaexports"
               target="_blank"
               className="hover:opacity-80"
             >
