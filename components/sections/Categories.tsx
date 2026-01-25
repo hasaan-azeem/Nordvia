@@ -9,6 +9,17 @@ gsap.registerPlugin(ScrollTrigger);
 // Example category-wise products
 const categories = [
   {
+    category: "Winter Jackets",
+    items: [
+      { title: "Nordvia Puffer Jacket", image: "/products/jacket1.webp" },
+      { title: "Nordvia Windbreaker Jacket", image: "/products/jacket2.webp" },
+      {
+        title: "Nordvia Arctic Edge Softshell Jacket",
+        image: "/products/jackets/black_jacket/soft_jacket.png",
+      },
+    ],
+  },
+  {
     category: "Hoodies & Sweatshirts",
     items: [
       { title: "Premium Fleece Hoodie", image: "/products/hoodie1.webp" },
@@ -16,20 +27,33 @@ const categories = [
       { title: "Pullover Hoodie", image: "/products/hoodie3.webp" },
     ],
   },
-  //   {
-  //     category: "T-Shirts",
-  //     items: [
-  //       { title: "Classic Tee", image: "/products/tshirt1.webp" },
-  //       { title: "Oversized Tee", image: "/products/tshirt2.webp" },
-  //       { title: "Custom Print Tee", image: "/products/tshirt3.webp" },
-  //     ],
-  //   },
   {
-    category: "Jackets & Outerwear",
+    category: "Casual Winter Coats",
     items: [
-      { title: "Puffer Jacket", image: "/products/jacket1.webp" },
-      { title: "Windbreaker", image: "/products/jacket2.webp" },
-      { title: "Denim Jacket", image: "/products/jacket3.webp" },
+      {
+        title: "Nordvia PolarCraft Wool-Blend Coat",
+
+        image: "/products/Coats/Black_coat/plain_coat.png",
+      },
+      {
+        title: "Nordvia Classic Winter Coat",
+
+        image: "/products/Coats/check_coat/check_coat.png",
+      },
+      {
+        title: "Nordvia PolarCraft Wool-Blend Coat - Long",
+        image: "/products/Coats/long_coat/long_coat.png",
+      },
+    ],
+  },
+  
+  {
+    category: "Winter Gloves",
+    items: [
+      {
+        title: "Nordvia Winter Gloves",
+        image: "/products/glove/glove.png",
+      },
     ],
   },
 ];
@@ -63,39 +87,41 @@ export default function ProductShowcase() {
         <h2 className="shipping-item text-4xl mb-4 md:text-5xl font-bold leading-tight">
           Our Catalog
         </h2>
-        <div >
-        {categories.map((cat) => (
-          <div key={cat.category} className="mb-16">
-            {/* Category Heading */}
-            <h2 className="text-3xl font-semibold sm:text-4xl mb-6">
-              {cat.category}
-            </h2>
+        <div>
+          {categories.map((cat) => (
+            <div key={cat.category} className="mb-16">
+              {/* Category Heading */}
+              <h2 className="text-3xl font-semibold sm:text-4xl mb-6">
+                {cat.category}
+              </h2>
 
-            {/* Product Grid */}
-            <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
-              {cat.items.map((item) => (
-                <div
-                  key={item.title}
-                  className="product-card group relative h-96 overflow-hidden rounded-2xl border border-white/10 shadow-lg"
-                >
-                  {/* Image */}
+              {/* Product Grid */}
+              <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+                {cat.items.map((item) => (
                   <div
-                    className="absolute inset-0 bg-cover bg-no-repeat bg-center transition-transform duration-500 group-hover:scale-105"
-                    style={{ backgroundImage: `url(${item.image})` }}
-                  />
+                    key={item.title}
+                    className="product-card group relative h-100 overflow-hidden rounded-2xl border border-white/10 shadow-lg"
+                  >
+                    {/* Image */}
+                    <div
+                      className="absolute inset-0 bg-cover bg-no-repeat bg-center transition-transform duration-500 group-hover:scale-105"
+                      style={{ backgroundImage: `url(${item.image})` }}
+                    />
 
-                  {/* Dark overlay */}
-                  <div className="absolute inset-0 bg-black/60" />
+                    {/* Dark overlay */}
+                    <div className="absolute inset-0 bg-black/50" />
 
-                  {/* Title */}
-                  <div className="relative z-10 flex h-full flex-col justify-end text-center p-5">
-                    <h3 className="text-lg font-semibold">{item.title}</h3>
+                    {/* Title */}
+                    <div className="relative z-10 flex h-full flex-col justify-end text-center p-5">
+                      <h3 className="text-lg font-semibold text-white">
+                        {item.title}
+                      </h3>
+                    </div>
                   </div>
-                </div>
-              ))}
+                ))}
+              </div>
             </div>
-          </div>
-        ))}
+          ))}
         </div>
       </div>
     </section>

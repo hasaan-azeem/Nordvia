@@ -2,15 +2,23 @@
 
 import Link from "next/link";
 import { useState, useRef, useEffect } from "react";
-import { FaInstagram, FaFacebookF, FaBars, FaTimes } from "react-icons/fa";
+import {
+  FaInstagram,
+  FaFacebookF,
+  FaBars,
+  FaTimes,
+  FaLinkedin,
+} from "react-icons/fa";
 import { FaEnvelope } from "react-icons/fa6";
 import gsap from "gsap";
 
 const products = [
+  { name: "Winter Jackets", href: "#catalog" },
   { name: "Hoodies", href: "#catalog" },
-  // { name: "Tracksuits", href: "#products" },
-  { name: "Jackets", href: "#catalog" },
-  { name: "Outerwear", href: "#catalog" },
+  { name: "Sweatshirts", href: "#catalog" },
+  { name: "Winter Tracksuits", href: "#catalog" },
+  { name: "Winter Coats", href: "#catalog" },
+  { name: "Winter Gloves", href: "#catalog" },
 ];
 
 export default function Navbar() {
@@ -123,6 +131,13 @@ export default function Navbar() {
               <FaFacebookF size={22} />
             </a>
             <a
+              href="https://www.linkedin.com/company/nordviaexports"
+              target="_blank"
+              className="hover:opacity-80"
+            >
+              <FaLinkedin size={22} />
+            </a>
+            <a
               href="mailto:nordvia.exports@gmail.com"
               className="cursor-pointer hover:opacity-80"
               target="_blank"
@@ -158,7 +173,7 @@ export default function Navbar() {
 
           <button
             onClick={() => setDropdown(!dropdown)}
-            className="text-left text-sm opacity-80 flex justify-between items-center w-full"
+            className="text-left text-sm opacity-80 flex justify-between items-center w-full z-10"
           >
             Products
             <span>{dropdown ? "▲" : "▼"}</span>
@@ -207,6 +222,13 @@ export default function Navbar() {
               <FaFacebookF size={18} />
             </a>
             <a
+              href="https://www.linkedin.com/company/nordviaexports"
+              className="cursor-pointer hover:opacity-80"
+              target="_blank"
+            >
+              <FaLinkedin size={18} />
+            </a>
+            <a
               href="mailto:nordvia.exports@gmail.com"
               className="cursor-pointer hover:opacity-80"
               target="_blank"
@@ -219,7 +241,7 @@ export default function Navbar() {
             href="https://wa.me/03146802816"
             target="_blank"
             onClick={() => setOpen(false)}
-            className="mt-4 rounded-full border border-white/20 px-5 py-3 text-center text-sm"
+            className="mt-4 rounded-full border border-white/20 px-5 py-3 text-center bg-white text-black font-semibold text-sm"
           >
             WhatsApp Inquiry
           </Link>

@@ -25,7 +25,7 @@ const products = [
       "Classic bomber and casual jackets, tailored for durability and style.",
   },
   {
-    title: "Coats & Cold Weather Outerwear",
+    title: "Cold Weather Outerwear",
     image: "/products/coats.webp",
     details: "Heavy-duty coats designed for extreme cold, export quality.",
   },
@@ -81,7 +81,9 @@ export default function Products() {
 
               {/* Title + Details */}
               <div className="relative z-10 flex h-full text-center flex-col justify-end p-5">
-                <h3 className="text-lg font-semibold mb-2">{item.title}</h3>
+                <h3 className="text-lg font-semibold -mb-2 text-white">
+                  {item.title}
+                </h3>
                 {/* <p className="text-sm opacity-80">{item.details}</p> */}
               </div>
             </div>
