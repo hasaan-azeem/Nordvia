@@ -116,7 +116,7 @@ export default function Footer() {
               <FaFacebookF size={22} />
             </a>
             <a
-              href="https://wa.me/03146802816"
+              href="https://wa.me/+923248548680"
               target="_blank"
               className="hover:opacity-80"
             >
@@ -144,10 +144,10 @@ export default function Footer() {
             <li>
               Phone:{" "}
               <a
-                href="tel:+923001234567"
+                href="tel:+923248548680"
                 className="hover:underline font-medium"
               >
-                +92 300 1234567
+                +92 324 8548680
               </a>
             </li>
             <li>Location: Sialkot, Pakistan</li>

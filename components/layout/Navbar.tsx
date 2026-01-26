@@ -108,7 +108,7 @@ export default function Navbar() {
           </Link>
 
           <Link
-            href="https://wa.me/03146802816"
+            href="https://wa.me/+923248548680"
             target="_blank"
             className="rounded-full border border-white/20 px-5 py-2 text-base hover:bg-white hover:text-black transition"
           >
@@ -238,7 +238,7 @@ export default function Navbar() {
           </div>
 
           <Link
-            href="https://wa.me/03146802816"
+            href="https://wa.me/+923248548680"
             target="_blank"
             onClick={() => setOpen(false)}
             className="mt-4 rounded-full border border-white/20 px-5 py-3 text-center bg-white text-black font-semibold text-sm"
