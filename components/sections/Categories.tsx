@@ -46,7 +46,7 @@ const categories = [
       },
     ],
   },
-  
+
   {
     category: "Winter Gloves",
     items: [
