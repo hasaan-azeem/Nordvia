@@ -109,7 +109,7 @@ export default function Footer() {
 
           <div className="flex gap-4 mb-4">
             <a
-              href="https://instagram.com"
+              href="https://instagram.com/nordvia.exports"
               target="_blank"
               className="hover:opacity-80"
             >
