@@ -7,6 +7,13 @@ import {
 import Image from "next/image";
 
 export default function Footer() {
+  const phoneNumber = "+923248548680";
+  const message = "Hi! I want to Check your Catalog.";
+
+  const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(
+    message,
+  )}`;
+
   return (
     <footer className="bg-black border-t border-white/10 py-12 text-white">
       <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-14 text-center md:text-left">
@@ -115,11 +122,7 @@ export default function Footer() {
             >
               <FaFacebookF size={22} />
             </a>
-            <a
-              href="https://wa.me/+923248548680"
-              target="_blank"
-              className="hover:opacity-80"
-            >
+            <a href={whatsappUrl} target="_blank" className="hover:opacity-80">
               <FaWhatsapp size={22} />
             </a>
             <a
@@ -143,10 +146,7 @@ export default function Footer() {
             </li>
             <li>
               Phone:{" "}
-              <a
-                href="tel:+923248548680"
-                className="hover:underline font-medium"
-              >
+              <a href={whatsappUrl} className="hover:underline font-medium">
                 +92 324 8548680
               </a>
             </li>

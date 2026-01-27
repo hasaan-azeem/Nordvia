@@ -22,6 +22,13 @@ const products = [
 ];
 
 export default function Navbar() {
+  const phoneNumber = "+923248548680";
+  const message = "Hi! I want to Check your Catalog.";
+
+  const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(
+    message,
+  )}`;
+
   const [open, setOpen] = useState(false);
   const [dropdown, setDropdown] = useState(false);
   const mobileMenuRef = useRef(null);
@@ -108,7 +115,7 @@ export default function Navbar() {
           </Link>
 
           <Link
-            href="https://wa.me/+923248548680"
+            href={whatsappUrl}
             target="_blank"
             className="rounded-full border border-white/20 px-5 py-2 text-base hover:bg-white hover:text-black transition"
           >
@@ -238,7 +245,7 @@ export default function Navbar() {
           </div>
 
           <Link
-            href="https://wa.me/+923248548680"
+            href={whatsappUrl}
             target="_blank"
             onClick={() => setOpen(false)}
             className="mt-4 rounded-full border border-white/20 px-5 py-3 text-center bg-white text-black font-semibold text-sm"

@@ -15,7 +15,7 @@ const categories = [
       { title: "Nordvia Windbreaker Jacket", image: "/products/jacket2.webp" },
       {
         title: "Nordvia Arctic Edge Softshell Jacket",
-        image: "/products/jackets/black_jacket/soft_jacket.webp",
+        image: "/products/Jackets/black_jacket/soft_jacket.webp",
       },
     ],
   },
@@ -33,7 +33,7 @@ const categories = [
       {
         title: "Nordvia PolarCraft Wool-Blend Coat",
 
-        image: "/products/Coats/Black_coat/plain_coat.webp",
+        image: "/products/Coats/Black_Coat/plain_coat.webp",
       },
       {
         title: "Nordvia Classic Winter Coat",
